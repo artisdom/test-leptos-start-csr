@@ -8,6 +8,7 @@ mod pages;
 
 // Top-Level pages
 use crate::pages::home::Home;
+use crate::pages::page1::Page1;
 use crate::pages::not_found::NotFound;
 
 /// An app router which renders the homepage and handles 404's
@@ -29,6 +30,7 @@ pub fn App() -> impl IntoView {
         <Router>
             <Routes>
                 <Route path="/" view=Home/>
+                <Route path="/page1" view=Page1/>
                 <Route path="/*" view=NotFound/>
             </Routes>
         </Router>
