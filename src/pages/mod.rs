@@ -6,5 +6,6 @@ pub mod page3;
 pub mod page4;
 pub mod page5;
 pub mod page6;
+pub mod page7;
 
 pub mod progress_bar;
