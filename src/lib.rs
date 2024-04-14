@@ -18,6 +18,7 @@ use crate::pages::page7::Page7;
 use crate::pages::page8::Page8;
 use crate::pages::page9::Page9;
 use crate::pages::page10::Page10;
+use crate::pages::page11::Page11;
 use crate::pages::not_found::NotFound;
 
 /// An app router which renders the homepage and handles 404's
@@ -49,6 +50,7 @@ pub fn App() -> impl IntoView {
                 <Route path="/page8" view=Page8/>
                 <Route path="/page9" view=Page9/>
                 <Route path="/page10" view=Page10/>
+                <Route path="/page11" view=Page11/>
                 <Route path="/*" view=NotFound/>
             </Routes>
         </Router>
